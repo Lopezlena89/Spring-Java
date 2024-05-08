@@ -10,7 +10,7 @@ public class ConsumoAPI {
     public String obtenerDatos(String URL){
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(url))
+                .uri(URI.create(URL))
                 .build();
         HttpResponse<String> response = null;
         try {
